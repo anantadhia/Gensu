@@ -4,26 +4,26 @@ interface Props {
 }
 
 const { callToAction } = Astro.props;
-const imageURL = "gym-ropes.jpg";
+const imageURL = "365756584_224932963862058_3220272521464185308_n.jpg";
 const bgStyle = { backgroundImage: `url('/images/${imageURL}')` };
 const content = [
   {
-    heading: "Mailing Address",
-    info: "123 Anywhere St, Any City, ST 34565",
+    heading: "Store Address",
+    info: "Jln.Pelem Raya, Glondong, Purwobinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582",
   },
   {
     heading: "Email Address",
-    info: "hello@reallygreatsite.com",
+    info: "genstudio16@gmail.com",
   },
   {
     heading: "Phone Number",
-    info: "(123) 456-7890",
+    info:  "+62 81326607496",
   },
 ];
 ---
 
 <footer
-  class="bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
+  class="bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply "
   style={bgStyle}
 >
   <div class="mx-auto max-w-screen-xl">
@@ -37,7 +37,7 @@ const content = [
         content.map((item) => (
           <div class="p-12">
             <h1 class="uppercase text-2xl italic">{item.heading}</h1>
-            <p>{item.info}</p>
+            <p>{item.info}</p><a href="wa.me/81326607496">Whatsapp</a>
           </div>
         ))
       }
